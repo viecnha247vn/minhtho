@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Liên hệ · NSNA Phan Minh Thọ — Phan Media</title>
+<meta name="description" content="NSNA Phan Minh Thọ — Phan Media. Nhiếp ảnh nghệ thuật và dịch vụ chụp ảnh: chân dung, cưới, sự kiện, thương mại. Bắt trọn khoảnh khắc, giữ trọn thời gian." />
+<meta property="og:title" content="Liên hệ · NSNA Phan Minh Thọ — Phan Media" />
+<meta property="og:description" content="Bắt trọn khoảnh khắc, giữ trọn thời gian." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="nav solid" id="nav">
+  <a class="brand" href="index.html">
+    <img class="brand-logo" src="images/logo.png" alt="Phan Media" />
+    <span class="brand-name">NSNA Phan Minh Thọ</span>
+  </a>
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Trang chủ</a>
+    <a href="nghe-thuat.html">Nghệ thuật</a>
+    <a href="dich-vu.html">Dịch vụ</a>
+    <a href="ve-chung-toi.html">Về chúng tôi</a>
+    <a href="lien-he.html" class="nav-cta active">Liên hệ</a>
+  </div>
+  <button class="burger" id="burger" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow">Liên hệ</span>
+    <h1>Kể cho chúng tôi về buổi chụp của bạn</h1>
+    <p>Để lại thông tin, hoặc gọi / nhắn Zalo trực tiếp — Phan Media sẽ phản hồi sớm nhất.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <form class="contact-form reveal" id="bookingForm">
+        <div class="field"><label for="name">Họ và tên</label><input type="text" id="name" name="name" required placeholder="Tên của bạn" /></div>
+        <div class="field"><label for="phone">Số điện thoại / Zalo</label><input type="tel" id="phone" name="phone" required placeholder="09xx xxx xxx" /></div>
+        <div class="field"><label for="type">Loại hình chụp</label>
+          <select id="type" name="type">
+            <option>Chân dung &amp; Cá nhân</option>
+            <option>Couple &amp; Cưới</option>
+            <option>Sự kiện</option>
+            <option>Doanh nghiệp &amp; Thương mại</option>
+            <option>Khác</option>
+          </select>
+        </div>
+        <div class="field"><label for="date">Ngày dự kiến</label><input type="date" id="date" name="date" /></div>
+        <div class="field"><label for="msg">Mô tả mong muốn</label><textarea id="msg" name="msg" placeholder="Bạn hình dung buổi chụp như thế nào?"></textarea></div>
+        <div class="form-actions"><button type="submit" class="btn btn-primary">Gửi yêu cầu qua Zalo</button></div>
+      </form>
+
+      <div class="contact-info reveal">
+        <div class="info-block"><div class="k">Điện thoại · Zalo</div><div class="v"><a href="tel:0976722420">0976 722 420</a></div></div>
+        <div class="info-block"><div class="k">Địa chỉ</div><div class="v">Tùng Giản, Tuy Phước Đông,<br/>Gia Lai</div></div>
+        <div class="info-block"><div class="k">Theo dõi</div>
+          <div class="socials">
+            <a href="https://www.facebook.com/michaelgothi" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.instagram.com/tho1850/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.youtube.com/@PhanMedia_Pro" target="_blank" rel="noopener">YouTube</a>
+            <a href="https://www.tiktok.com/@phan_media" target="_blank" rel="noopener">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="wrap footer-in">
+    <div class="fcol">
+      <span class="fb">NSNA Phan Minh Thọ</span>
+      <div class="fnav"><a href="index.html">Trang chủ</a><a href="nghe-thuat.html">Nghệ thuật</a><a href="dich-vu.html">Dịch vụ</a><a href="ve-chung-toi.html">Về chúng tôi</a><a href="lien-he.html">Liên hệ</a></div>
+    </div>
+    <small>© 2026 Phan Media · Bắt trọn khoảnh khắc — giữ trọn thời gian.</small>
+  </div>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
