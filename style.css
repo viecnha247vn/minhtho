@@ -74,7 +74,7 @@ h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.1;ma
 .hero{
   position:relative;min-height:100vh;display:flex;align-items:flex-end;padding:0 0 9vh;
   background:linear-gradient(105deg,rgba(28,20,14,.86) 0%,rgba(28,20,14,.5) 46%,rgba(28,20,14,.12) 100%),
-             url('images/hero.jpg') center/cover no-repeat;
+             url('hero.jpg') center/cover no-repeat;
 }
 .hero::after{content:"";position:absolute;inset:0;pointer-events:none;
   background:linear-gradient(180deg,rgba(42,31,23,.15) 0%,rgba(42,31,23,.02) 40%,rgba(42,31,23,.9) 100%);}
