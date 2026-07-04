@@ -225,6 +225,9 @@ h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.1;ma
   .nav-links a{font-size:1.05rem;}
   .burger{display:block;}
   .previews,.about-grid,.contact-grid,.svc-grid{grid-template-columns:1fr;}
+  .profile{grid-template-columns:1fr;gap:30px;}
+  .profile-photo{max-width:340px;}
+  .awardlist{grid-template-columns:1fr;}
   .process{grid-template-columns:1fr 1fr;}
   .work-wide,.work-tall{grid-column:span 12;}
   .work-wide .ph{aspect-ratio:3/2;}
@@ -242,4 +245,36 @@ h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.1;ma
   html{scroll-behavior:auto;}
   .reveal{opacity:1;transform:none;transition:none;}
   *{animation:none!important;}
+}
+
+/* ---- chân trang: dòng sở hữu thương hiệu ---- */
+.footer .fright{align-items:flex-end;text-align:right;}
+.footer .owner{color:var(--muted-2);font-size:.78rem;}
+@media (max-width:860px){ .footer .fright{align-items:flex-start;text-align:left;} }
+
+/* ---------------- HỒ SƠ NGHỆ SĨ + THÀNH TÍCH ---------------- */
+.profile{display:grid;grid-template-columns:.82fr 1.18fr;gap:52px;align-items:center;}
+.profile-photo img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;border:1px solid var(--line);}
+.profile-body h2{font-size:clamp(1.7rem,3.6vw,2.6rem);margin:12px 0 22px;}
+.creds{list-style:none;padding:0;margin:0 0 30px;display:flex;flex-direction:column;gap:11px;}
+.creds li{position:relative;padding-left:24px;color:var(--bone);font-weight:400;}
+.creds li::before{content:"";position:absolute;left:2px;top:.55em;width:9px;height:9px;border:1px solid var(--sand);transform:rotate(45deg);}
+.exp h4{font-family:"Be Vietnam Pro",sans-serif;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--sand);font-weight:500;margin:0 0 14px;}
+.dots{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px;}
+.dots li{position:relative;padding-left:20px;color:var(--muted);}
+.dots li::before{content:"";position:absolute;left:2px;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--sand);}
+.awards{margin-top:66px;border-top:1px solid var(--line);padding-top:50px;}
+.awards>.eyebrow{display:block;margin-bottom:28px;}
+.awardlist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;}
+.awardlist li{display:flex;gap:16px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line-2);}
+.awardlist .yr{font-family:"Fraunces",serif;color:var(--sand);font-size:.98rem;font-weight:500;min-width:44px;}
+.awardlist .aw{color:var(--muted);font-weight:300;}
+.awardlist .aw b{color:var(--bone);font-weight:500;}
+.awards-note{color:var(--muted-2);font-style:italic;margin:28px 0 0;font-size:.92rem;}
+
+/* mobile override cho mục hồ sơ (đặt sau base để thắng thứ tự) */
+@media (max-width:860px){
+  .profile{grid-template-columns:1fr;gap:30px;}
+  .profile-photo{max-width:330px;}
+  .awardlist{grid-template-columns:1fr;gap:0;}
 }
